@@ -1,0 +1,14 @@
+// Configuration
+@import "base/variables";
+@import "base/mixins";
+
+// Reset
+@import "base/normalize";
+@import "base/reset";
+
+// Components
+@import "components/header";
+@import "components/hero";
+@import "components/about";
+@import "components/events";
+@import "components/footer";
