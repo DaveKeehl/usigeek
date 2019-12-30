@@ -29,13 +29,7 @@ $light-black              : #404040                                  !default;
 // =============================================================================
 
 $font-size                : 1rem                                       !default;
-$font-family              : 'Raleway', sans-serif
-                            -apple-system, 
-                            BlinkMacSystemFont, 
-                            Helvetica Neue, 
-                            Helvetica, 
-                            Arial, 
-                            sans-serif                                 !default;
+$font-family              : 'Raleway', sans-serif                      !default;
 $line-height              : 1.5                                        !default;
 
 $h1-font-size             : 2.5rem                                     !default;
@@ -43,6 +37,5 @@ $h2-font-size             : 1.875rem                                   !default;
 $h1-font-weight           : 800                                        !default;
 $h2-font-weight           : 700                                        !default;
 
-$h1-mobile                : 1.75rem !default;
-$h2-mobile                : 1.5rem !default;
-
+$h1-mobile                : 1.75rem                                    !default;
+$h2-mobile                : 1.5rem                                     !default;
