@@ -1,3 +1,17 @@
 .about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: $orange;
+	padding: $section-spacing;
+	h1 {
+		background-color: $black;
+		color: $orange;
+		margin-bottom: 50px;
+	}
+	p {
+		width: 80%;
+		font-size: 1.125rem;
+		font-weight: 600;
+	}
 }

@@ -2,4 +2,18 @@ body {
 	font-size: $font-size;
 	font-family: $font-family;
 	line-height: $line-height;
+	text-align: center;
+}
+
+h1 {
+	font-size: $h1-font-size;
+	font-weight: $h1-font-weight;
+	width: fit-content;
+	padding: 10px 20px;
+	line-height: normal;
+}
+
+h2 {
+	font-size: $h2-font-size;
+	font-weight: $h2-font-weight;
 }

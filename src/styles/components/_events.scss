@@ -1,3 +1,45 @@
 .events {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: $black;
+	padding: $section-spacing;
+	h1 {
+		background-color: $white;
+		margin-bottom: 100px;
+	}
+	.event {
+		display: grid;
+		grid-template-columns: 5fr 7fr;
+		grid-column-gap: 20px;
+		width: 80%;
+		background-color: $white;
+		padding: 20px;
+		border-radius: 5px;
+		text-align: left;
+		.details {
+			margin: 20px 0;
+			color: $light-black;
+			& > div {
+				display: flex;
+				img {
+					margin-right: 10px;
+				}
+			}
+		}
+		.divider {
+			background-color: $orange;
+			height: 2px;
+			width: 50px;
+			margin-bottom: 20px;
+		}
+		.description {
+			color: $light-black;
+		}
+		span {
+			color: $black;
+		}
+	}
+
 }
+

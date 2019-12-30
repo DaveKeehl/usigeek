@@ -9,7 +9,15 @@ html {
   box-sizing: inherit;
 }
 
-// Remove figure margin
-figure {
+// Remove unwanted default spaces
+h1, 
+h2,
+h3,
+p,
+figure,
+ul,
+li {
   margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
 }

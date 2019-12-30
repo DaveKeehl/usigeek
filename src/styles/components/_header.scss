@@ -1,5 +1,24 @@
 .header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 40px;
 	font-family: 'Teko', sans-serif;
-	background-color: $black;
+	background-color: transparentize($black, .2);
 	color: $white;
+	font-size: $header-font-size;
+	font-weight: 500;
+	line-height: $header-font-size;
+	letter-spacing: calc(#{$header-font-size} * .1);
+	span {
+		color: $orange;
+	}
+	ul {
+		list-style: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 20px;
+	}
 }
