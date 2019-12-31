@@ -1,7 +1,17 @@
 .hero {
 	background-color: $black;
-	height: 100vh;
+	height: calc(100vh + #{$triangle});
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -$triangle;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 $triangle $triangle $triangle;
+		border-color: transparent transparent $orange transparent;
+	}
 }
