@@ -1,17 +1,46 @@
 .hero {
+	position: relative;
 	background-color: $black;
 	height: calc(100vh + #{$triangle});
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	.logo {
+		transform: translateY(-50px);
+	}
 	&::after {
 		content: '';
 		position: absolute;
-		bottom: -$triangle;
+		bottom: 0;
 		width: 0;
 		height: 0;
 		border-style: solid;
 		border-width: 0 $triangle $triangle $triangle;
 		border-color: transparent transparent $orange transparent;
 	}
+	.scroll {
+		position: absolute;
+		bottom: calc(#{$triangle} + 50px);
+		.mouse {
+			position: relative;
+			border: 2px solid $orange;
+			width: 35px;
+			height: 55px;
+			border-radius: 15px;
+			margin-bottom: 20px;
+			&::after {
+				position: absolute;
+				top: 5px;
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: $orange;
+				content: '';
+				height: 10px;
+				width: 2px;
+				border-radius: 2px;
+			}
+		}
+	}
+
 }
