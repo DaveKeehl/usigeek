@@ -6,6 +6,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background: linear-gradient(transparentize($black, .15),transparentize($black, .15)), url(../../images/hero-bg.png);
 	.logo {
 		transform: translateY(-50px);
 	}

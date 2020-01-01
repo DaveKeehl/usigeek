@@ -5,6 +5,11 @@
 	align-items: center;
 	background-color: $black;
 	padding: $section-spacing;
+	*:not(img)::selection {
+		background-color: $black;
+		color: $white;
+		text-shadow: 0 0 40px;
+	}
 	h1 {
 		background-color: $white;
 		margin-bottom: 100px;
@@ -28,13 +33,33 @@
 		padding: 20px;
 		border-radius: 5px;
 		text-align: left;
+		.gallery {
+			position: relative;
+			background-color: red;
+			&::after {
+				content: '1 FOTO';
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 5px 15px;
+				background-color: $orange;
+				color: $white;
+				font-size: $image-count-size;
+				font-weight: $image-count-weight;
+			}
+		}
+		.info {
+			color: $light-black;
+		}
 		.details {
 			margin: 20px 0;
-			color: $light-black;
 			& > div {
 				display: flex;
 				img {
 					margin-right: 10px;
+					&::selection {
+						filter: invert(1);
+					}
 				}
 			}
 		}
@@ -49,6 +74,7 @@
 		}
 		span {
 			color: $black;
+			font-weight: 600;
 		}
 	}
 

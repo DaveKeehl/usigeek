@@ -9,11 +9,22 @@
 		background-color: $black;
 		color: $orange;
 		margin-bottom: 50px;
+		&::selection {
+			background-color: $orange;
+			color: $black;
+		}
 	}
 	p {
 		width: 80%;
 		font-size: 1.125rem;
-		font-weight: 600;
+		font-weight: 500;
+		&:not(:last-of-type) {
+			margin-bottom: 30px;
+		}
+		&::selection {
+			color: $orange;
+			background-color: $black;
+		}
 	}
 	&::after {
 		content: '';

@@ -7,7 +7,7 @@ class Event extends Component {
 	render() {
 		return (
 			<div className="event">
-				<div></div>
+				<div className="gallery"></div>
 				<div className="info">
 					<h2>{this.props.title}</h2>
 					<div className="details">
@@ -16,7 +16,7 @@ class Event extends Component {
 						<div><img src={Marker} alt="Marker"></img><p>{this.props.place}</p></div>
 					</div>
 					<div className="divider"></div>
-					<p>{this.props.description}</p>
+					{this.props.description}
 				</div>
 			</div>
 		)
