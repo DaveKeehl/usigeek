@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import {smoothScroll} from '../../utils';
 
 class Header extends Component {
-	render() {
+	render () {
 		return (
 			<nav className={this.props.className}>
-				<h3>USI<span>GEEK</span></h3>
+				<a href="../../index.js">USI<span>GEEK</span></a>
 				<div>
 					<ul>
-						<li>ABOUT</li>
-						<li>EVENTI</li>
+						<li onClick={() =>{smoothScroll("about")}}>ABOUT</li>
+						<li onClick={() =>{smoothScroll("events")}}>EVENTI</li>
 						<li>EN/IT</li>
 					</ul>
 				</div>

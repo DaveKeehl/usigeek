@@ -13,6 +13,7 @@
 	font-weight: 500;
 	line-height: $header-font-size;
 	letter-spacing: calc(#{$header-font-size} * .1);
+	height: 60px;
 	span {
 		color: $orange;
 	}
@@ -21,5 +22,11 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-column-gap: 20px;
+		li {
+			cursor: pointer;
+			&:hover {
+				border-bottom: 2px solid $orange;
+			}
+		}
 	}
 }

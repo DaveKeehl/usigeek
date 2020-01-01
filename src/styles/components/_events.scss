@@ -25,17 +25,30 @@
 		border-color: transparent transparent $orange transparent;
 	}
 	.event {
-		display: grid;
-		grid-template-columns: 5fr 7fr;
-		grid-column-gap: 20px;
+		display: flex;
+		flex-direction: row;
 		width: 80%;
 		background-color: $white;
 		padding: 20px;
 		border-radius: 5px;
 		text-align: left;
 		.gallery {
+			background-color: $black;
 			position: relative;
-			background-color: red;
+			cursor: pointer;
+			width: calc(100% / 12 * 5 - 10px);
+			margin-right: 10px;
+			max-height: 300px;
+			overflow: hidden;
+			img {
+				opacity: .7;
+				width: 100%;
+				transition: all .2s ease;
+				&:hover {
+					transform: scale(1.05);
+					opacity: .5;
+				}
+			}
 			&::after {
 				content: '1 FOTO';
 				position: absolute;
@@ -50,6 +63,8 @@
 		}
 		.info {
 			color: $light-black;
+			width: calc(100% / 12 * 7 - 10px);
+			margin-left: 10px;
 		}
 		.details {
 			margin: 20px 0;

@@ -7,7 +7,9 @@ class Event extends Component {
 	render() {
 		return (
 			<div className="event">
-				<div className="gallery"></div>
+				<div className="gallery">
+					<img src={this.props.image} alt={this.props.title}></img>
+				</div>
 				<div className="info">
 					<h2>{this.props.title}</h2>
 					<div className="details">
