@@ -1,14 +1,14 @@
 // Configuration
-@import "base/variables";
-@import "base/mixins";
-@import "base/fonts";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/fonts";
 
 // Reset
-@import "base/normalize";
-@import "base/reset";
+@import "utils/normalize";
+@import "utils/reset";
 
 // General styles
-@import "base/general";
+@import "utils/general";
 
 // Components
 @import "components/header";
@@ -16,3 +16,6 @@
 @import "components/about";
 @import "components/events";
 @import "components/footer";
+
+// // Mediaqueries
+@import "utils/mediaqueries";

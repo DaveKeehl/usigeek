@@ -32,6 +32,9 @@
 		padding: 20px;
 		border-radius: 5px;
 		text-align: left;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
 		.gallery {
 			background-color: $black;
 			position: relative;

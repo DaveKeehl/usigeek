@@ -9,7 +9,7 @@ class Header extends Component {
 				<div>
 					<ul>
 						<li onClick={() =>{smoothScroll("about")}}>ABOUT</li>
-						<li onClick={() =>{smoothScroll("events")}}>EVENTI</li>
+						<li onClick={() =>{smoothScroll("events")}}>EVENTS</li>
 						<li>EN/IT</li>
 					</ul>
 				</div>

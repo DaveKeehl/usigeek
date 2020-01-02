@@ -18,11 +18,11 @@ class Events extends Component {
 					description: <p>Proiezione del cortometraggio fan made intitolato "<span>Voldemort: Origins of the Heir</span>" (versione originale in inglese, sottotitoli in italiano) seguito da discussione. Come ospite sarà presente la professoressa Eleonora Benecchi. Vi saranno bevande e snack.</p>
 				},
 				en: {
-					title: '',
-					date: '',
-					time: '',
-					place: '',
-					description: ''
+					title: 'HARRY POTTER NIGHT',
+					date: '2 May 2019',
+					time: '8:00 PM',
+					place: 'USI, Room A11',
+					description: <p>We will show the short fan made movie "<span>Voldemort: Origins of the Heir</span>" (original English version with Italian subtitles) and follow with a discussion. We will have as guest professor Eleonora Benecchi. There will be beverages and snacks.</p>
 				},
 				image: img1
 			},

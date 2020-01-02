@@ -2,18 +2,25 @@
 // CONTAINERS
 // =============================================================================
 
-$x-small                  : 600px                                      !default;
-$small                    : 800px                                      !default;
-$medium                   : 1000px                                     !default;
+$small-s                  : 320px                                      !default;
+$small-m                  : 375px                                      !default;
+$small-l                  : 425px                                      !default;
+$small                    : 768px                                      !default;
+$medium                   : 1024px                                     !default;
 $large                    : 1200px                                     !default;
 
 // =============================================================================
 // BREAKPOINTS
 // =============================================================================
 
-$mobile                   : $x-small                                   !default;
+
+$mobile-s                 : $small-s                                   !default;
+$mobile-m                 : $small-m                                   !default;
+$mobile-l                 : $small-l                                   !default;
 $tablet                   : $small                                     !default;
 $desktop                  : $medium                                    !default;
+
+$landscape                : 550px                                      !default;
 
 // =============================================================================
 // COLORS
@@ -37,12 +44,14 @@ $image-count-size         : 0.875rem                                   !default;
 $image-count-weight       : 600                                        !default;
 
 $h1-font-size             : 2.5rem                                     !default;
-$h2-font-size             : 1.875rem                                   !default;
 $h1-font-weight           : 800                                        !default;
-$h2-font-weight           : 700                                        !default;
+$h1-spacing               : 2px                                        !default;
 
 $h1-mobile                : 1.75rem                                    !default;
 $h2-mobile                : 1.5rem                                     !default;
+
+$h2-font-size             : 1.875rem                                   !default;
+$h2-font-weight           : 700                                        !default;
 
 // =============================================================================
 // SPACING
@@ -55,3 +64,4 @@ $section-spacing          : 200px 0                                    !default;
 // =============================================================================
 
 $triangle                 : 40px                                       !default;
+$triangle-mobile          : 30px                                       !default;
