@@ -1,4 +1,11 @@
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 body {
+	background: $black;
+	// font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
 	font-size: $font-size;
 	font-family: $font-family;
 	line-height: $line-height;

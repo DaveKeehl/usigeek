@@ -1,5 +1,9 @@
 @media screen and (max-width: $tablet) {
+	.about {
+		padding: $section-spacing-mobile;
+	}
 	.events {
+		padding: $section-spacing-mobile;
 		.event {
 			flex-direction: column-reverse;
 			padding: 30px;
@@ -26,6 +30,7 @@
 		}
 	}
 	.hero {
+		height: calc(100vh + #{$triangle-mobile});
 		.logo {
 			transform: translateY(-50px) scale(0.8);
 		}
