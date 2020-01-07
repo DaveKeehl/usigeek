@@ -14,7 +14,7 @@
 	line-height: $header-font-size;
 	letter-spacing: calc(#{$header-font-size} * .1);
 	height: 60px;
-	span {
+	a span {
 		color: $orange;
 	}
 	ul {
@@ -26,6 +26,9 @@
 			cursor: pointer;
 			&:hover {
 				border-bottom: 2px solid $orange;
+			}
+			#it {
+				color: $orange;
 			}
 		}
 	}

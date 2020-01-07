@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {smoothScroll} from '../../utils';
+import {language} from '../../utils';
+import {changeLanguage} from '../../utils';
 
 class Header extends Component {
 	render () {
@@ -10,7 +12,7 @@ class Header extends Component {
 					<ul>
 						<li onClick={() =>{smoothScroll("about")}}>ABOUT</li>
 						<li onClick={() =>{smoothScroll("events")}}>EVENTS</li>
-						<li>EN/IT</li>
+						<li onClick={() =>{changeLanguage();console.log(language);}}><span id="en">EN</span>/<span id="it">IT</span></li>
 					</ul>
 				</div>
 			</nav>

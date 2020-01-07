@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import Event from '../Event/Event';
 import img1 from '../../images/event1.png';
+import {language} from '../../utils';
 
 class Events extends Component {
 
 	render() {
-
-		var language = 'it';
 
 		const events = {
 			event_1: {

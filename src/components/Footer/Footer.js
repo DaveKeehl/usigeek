@@ -19,7 +19,7 @@ class Footer extends Component {
 					<a href="https://t.me/UsiGeek"><img src={Telegram} alt="Telegram"></img></a>
 					<a href="https://discord.gg/WuW49yu"><img src={Discord} alt="Discord"></img></a>
 				</div>
-				<p>© 2020 USI Geek. Tutti i diritti riservati.</p>
+				<p>© {new Date().getFullYear()} USI Geek. Tutti i diritti riservati.</p>
 				<p>Sviluppato da <a href="https://www.davideciulla.com" target="_blank" rel="noopener noreferrer" aria-label="Davide Ciulla's Online Portfolio">Davide Ciulla</a></p>
 			</footer>
 		)
