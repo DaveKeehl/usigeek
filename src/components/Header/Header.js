@@ -7,7 +7,7 @@ class Header extends Component {
 	render () {
 		return (
 			<nav className={this.props.className}>
-				<a href="../../index.js">USI<span>GEEK</span></a>
+				<a href="/">USI<span>GEEK</span></a>
 				<div>
 					<ul>
 						<li onClick={() =>{smoothScroll("about")}}>ABOUT</li>
