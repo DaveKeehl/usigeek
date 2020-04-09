@@ -1,11 +1,14 @@
-html {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-body {
+.App {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
 	background: $black;
-	// font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
 	font-size: $font-size;
 	font-family: $font-family;
 	line-height: $line-height;
@@ -27,6 +30,11 @@ h2 {
 	font-weight: $h2-font-weight;
 }
 
-.active {
-	color: $orange !important;
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
 }

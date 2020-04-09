@@ -1,0 +1,197 @@
+//=================================================
+// VARIABLES
+//=================================================
+
+// Containers
+$small-s : 320px  !default;
+$small-m : 375px  !default;
+$small-l : 425px  !default;
+$small   : 768px  !default;
+$medium  : 1024px !default;
+$large   : 1200px !default;
+
+// Breakpoints
+$mobile-s  : $small-s !default;
+$mobile-m  : $small-m !default;
+$mobile-l  : $small-l !default;
+$tablet    : $small   !default;
+$desktop   : $medium  !default;
+
+$landscape : 550px    !default;
+
+// Colors
+$orange      : #FF8B17 !default;
+$black       : #000000 !default;
+$white       : #FFFFFF !default;
+$light-black : #404040 !default;
+
+// Typography
+$font-size          : 1rem                  !default;
+$font-family        : 'Raleway', sans-serif !default;
+$line-height        : 1.5                   !default;
+
+$header-font-size   : 1.5625rem             !default;
+$image-count-size   : 0.875rem              !default;
+$image-count-weight : 600                   !default;
+
+$h1-font-size       : 2.5rem                !default;
+$h1-font-weight     : 800                   !default;
+$h1-spacing         : 2px                   !default;
+
+$h1-mobile          : 1.75rem               !default;
+$h2-mobile          : 1.5rem                !default;
+
+$h2-font-size       : 1.875rem              !default;
+$h2-font-weight     : 700                   !default;
+
+// Spacing
+$section-spacing        : 200px 0 !default;
+$section-spacing-mobile : 100px 0 !default;
+
+// Sizes
+$triangle        : 40px !default;
+$triangle-mobile : 30px !default;
+
+//=================================================
+// FONTS
+//=================================================
+
+// TEKO
+@import url('https://fonts.googleapis.com/css?family=Teko:500&display=swap');
+
+// RALEWAY
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,800&display=swap');
+
+//=================================================
+// GENERAL
+//=================================================
+
+
+
+//=================================================
+// COMPONENTS
+//=================================================
+
+@import './components/App/app';
+@import './components/Header/header';
+@import './components/Hero/hero';
+@import './components/About/about';
+@import './components/Events/events';
+@import './components/Footer/footer';
+
+//=================================================
+// MEDIA QUERIES
+//=================================================
+
+@media screen and (max-width: $tablet) {
+	.about {
+		padding: $section-spacing-mobile;
+	}
+	.events {
+		padding: $section-spacing-mobile;
+		.event {
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 30px;
+			.gallery, .info {
+				width: 100%;
+				margin: 0;
+			}
+			.info {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile-l) {
+	h1 {
+		font-size: 1.875rem;
+	}
+	.header {
+		padding: 20px;
+		font-size: 1.375rem;
+		ul {
+			grid-column-gap: 10px;
+		}
+	}
+	.hero {
+		height: calc(100vh + #{$triangle-mobile});
+		.logo {
+			transform: translateY(-50px) scale(0.8);
+		}
+		.scroll {
+			transform: scale(0.8);
+		}
+		&::after {
+			border-width: 0 $triangle-mobile $triangle-mobile $triangle-mobile;
+		}
+	}
+	.about {
+		p {
+			font-size: 1rem;
+		}
+		&::after {
+			border-width: 0 $triangle-mobile $triangle-mobile $triangle-mobile;
+		}
+	}
+	.events {
+		h2 {
+			font-size: 1.625rem;
+		}
+		.event {
+			padding: 20px;
+			.gallery {
+				max-height: 150px;
+			}
+		}
+		&::after {
+			border-width: 0 $triangle-mobile $triangle-mobile $triangle-mobile;
+		}
+	}
+	.footer {
+		.socials {
+			.img {
+				width: 30px;
+			}
+		} 
+	}
+}
+
+@media screen and (max-width: $mobile-m) {
+	.header {
+		padding: 20px 10px;
+		font-size: 1.25rem;
+		ul {
+			grid-column-gap: 5px;
+		}
+	}
+	.footer {
+		.socials {
+			grid-column-gap: 15px;
+			margin-bottom: 0;
+
+			img {
+				width: 30px;
+			}
+		}
+		p {
+			font-size: 0.875rem;
+			&:nth-of-type(2) {
+				font-size: 0.75rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-height: $landscape) {
+	.hero {
+		.logo {
+			transform: none;
+			width: 70vh;
+		}
+		.scroll {
+			display: none;
+		}
+	}
+}

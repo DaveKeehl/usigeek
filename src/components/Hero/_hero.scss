@@ -1,17 +1,19 @@
 .hero {
 	position: relative;
-	background-color: $black;
 	height: calc(100vh + #{$triangle});
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: $black;
 	background: linear-gradient(transparentize($black, .15),transparentize($black, .15)), url(../../images/hero-bg.png);
 	background-size: auto, cover;
 	background-position: center;
+
 	.logo {
 		transform: translateY(-50px);
 	}
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -22,9 +24,14 @@
 		border-width: 0 $triangle $triangle $triangle;
 		border-color: transparent transparent $orange transparent;
 	}
+
 	.scroll {
 		position: absolute;
 		bottom: calc(#{$triangle} + 50px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
 		.mouse {
 			position: relative;
 			border: 2px solid $orange;
@@ -49,10 +56,9 @@
 				border-radius: 2px;
 			}
 		}
-		img {
-			&:hover {
-				cursor: pointer;
-			}
+
+		img:hover {
+			cursor: pointer;
 		}
 	}
 

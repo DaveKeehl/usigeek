@@ -1,8 +1,9 @@
-.header {
+header {
 	position: fixed;
+	z-index: 5;
 	top: 0;
 	width: 100%;
-	z-index: 5;
+	height: 60px;
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 40px;
@@ -13,22 +14,23 @@
 	font-weight: 500;
 	line-height: $header-font-size;
 	letter-spacing: calc(#{$header-font-size} * .1);
-	height: 60px;
-	a span {
-		color: $orange;
+
+	.geek, .active {
+		color: $orange
 	}
+
 	ul {
-		list-style: none;
-		display: grid;
-		grid-template-columns: repeat(3,1fr);
-		grid-column-gap: 20px;
+		display: flex;
+
 		li {
-			cursor: pointer;
 			&:hover {
-				border-bottom: 2px solid $orange;
+				&:not(:last-child) {
+					color: $orange;
+				}
+				cursor: pointer;
 			}
-			#it {
-				color: $orange;
+			&:not(:last-child) {
+				margin-right: 20px;
 			}
 		}
 	}

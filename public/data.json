@@ -1,0 +1,92 @@
+{
+	"data" : {
+		"about" : {
+			"english" : [
+				"USIGeek is a student association of Università della Svizzera italiana (USI) with the goal of sharing passions and interests about entartainment and technology.",
+				"We organise public events where everyone can share their own opinions and interests through discussions held by field experts. Furthermore, association members benefit from exclusive private events, where they meet up to play games, watch movies or tv series in a more intimate and relaxed gathering."
+			],
+			"italian" : [
+				"USIGeek è un'associazione studentesca dell'Università della Svizzera italiana (USI) nata per condividere passioni ed interessi per il mondo dell'intrattenimento e della tecnologia.",
+				"Organizziamo eventi aperti al pubblico dove chiunque può condividere le proprie opinioni e i propri interessi attraverso discussioni tenute da esperti in materia. Oltre a questi incontri educativi e interessanti, vengono organizzati anche eventi ristretti ai membri dell’associazione, più intimi e tranquilli ma pieni di divertimento e passione, dove i membri si ritrovano a giocare, guardare un film/serie televisiva e altro ancora.",
+				"Qualsiasi desiderio e idea che tu abbia la puoi proporre alla nostra associazione, questo vuol dire che le attività possibili sono infinite!\n\nChiunque è il benvenuto da USIGeek!"
+			]
+		},
+		"events" : [
+			{
+				"italian" : {
+					"title" : "SERATA HARRY POTTER",
+					"date" : {
+						"day" : "2",
+						"month" : "maggio",
+						"year" : "2019"
+					},
+					"time" : "Ore 20:00",
+					"place" : "USI, Aula A11",
+					"description" : "Proiezione del cortometraggio fan made intitolato \"Voldemort: Origins of the Heir\" (versione originale in inglese, sottotitoli in italiano) seguito da discussione. Come ospite sarà presente la professoressa Eleonora Benecchi. Vi saranno bevande e snack."
+				},
+				"english" : {
+					"title" : "HARRY POTTER NIGHT",
+					"date" : {
+						"day" : "2",
+						"month" : "May",
+						"year" : "2019"
+					},
+					"time" : "8:00 PM",
+					"place" : "USI, Room A11",
+					"description" : "We will show the short fan made movie \"Voldemort: Origins of the Heir\" (original English version with Italian subtitles) and follow with a discussion. We will have as guest professor Eleonora Benecchi. There will be beverages and snacks."
+				},
+				"photos" : ["harry potter poster.png"]
+			},
+			{
+				"italian" : {
+					"title" : "Serata star wars",
+					"date" : {
+						"day" : "4",
+						"month" : "maggio",
+						"year" : "2019"
+					},
+					"time" : "Ore 21:00",
+					"place" : "USI, Aula SI-008",
+					"description" : "Si inizierà la serata con quiz a tema Star Wars e aperitivo. In seguito proiezione del film \"Rogue One: A Star Wars Story\" (versione originale in inglese, sottotitoli in italiano)."
+				},
+				"english" : {
+					"title" : "Star wars night",
+					"date" : {
+						"day" : "4",
+						"month" : "May",
+						"year" : "2019"
+					},
+					"time" : "9:00 PM",
+					"place" : "USI, Room SI-008",
+					"description" : "We will start the evening with Star Wars themed quizzes and an aperò. We will follow with the showing of the movie \"Rogue One: A Star Wars Story\" (original English version with Italian subtitles)."
+				},
+				"photos" : ["star wars poster.png"]
+			},
+			{
+				"italian" : {
+					"title" : "Board Games Nights",
+					"date" : {
+						"day" : "",
+						"month" : "Fine maggio",
+						"year" : "2018"
+					},
+					"time" : "Da definire",
+					"place" : "Da definire",
+					"description" : "Board Games Night è un evento regolare che organizziamo per riunire tutti coloro che sono interessati ai giochi da tavolo."
+				},
+				"english" : {
+					"title" : "Board Games Nights",
+					"date" : {
+						"day" : "",
+						"month" : "End of May",
+						"year" : "2018"
+					},
+					"time" : "To be defined",
+					"place" : "To be defined",
+					"description" : "Board Games Night is a recurrent event that we organise for people who enjoy playing board games."
+				},
+				"photos" : ["BGN.png", "BGN-foto1.jpg", "BGN-foto2.jpg", "BGN-foto3.jpg", "BGN-foto4.jpg", "BGN-foto5.jpg", "BGN-foto6.jpg", "BGN-foto7.jpg"]
+			}
+		]
+	}
+}
