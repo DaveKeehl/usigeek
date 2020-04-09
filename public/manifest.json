@@ -1,6 +1,7 @@
 {
   "short_name": "USIGeek",
   "name": "USIGeek",
+  "description": "Website of USIGeek, a student association of USI (Università della Svizzera Italiana)",
   "icons": [
     {
       "src": "favicon.ico",

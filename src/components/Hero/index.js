@@ -16,7 +16,7 @@ function Hero() {
 			>
 			</img>
 			<div className="scroll" onClick={handleClick}>
-				<div className="mouse"></div>
+				{/* <div className="mouse"></div> */}
 				<div className="arrow">
 					<img src={Arrows} alt="Arrows"></img>
 				</div>

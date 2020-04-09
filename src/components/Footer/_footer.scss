@@ -1,22 +1,25 @@
 footer {
 	background-color: $orange;
-	padding: 50px 0;
+	padding: 50px 20px;
 
 	*::selection {
 		background-color: $black;
 		color: $orange;
 	}
 
-	.socials a {
-		margin: 0 auto;
-		margin-bottom: 20px;
-		width: fit-content;
-		transition: opacity .2s;
-		&:hover {
-			opacity: .7;
-		}
-		&:not(:last-child) {
-			margin-right: 20px;
+	.socials {
+		display: flex;
+		justify-content: center;
+		a {
+			margin-bottom: 20px;
+			height: 30px;
+			transition: opacity .2s;
+			&:hover {
+				opacity: .7;
+			}
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
 		}
 	}
 

@@ -83,6 +83,13 @@ $triangle-mobile : 30px !default;
 // MEDIA QUERIES
 //=================================================
 
+@media screen and (max-width: 600px) {
+	.events .event .modal-content {
+		width: 100%;
+		height: 100%;
+	}
+}
+
 @media screen and (max-width: $tablet) {
 	.about {
 		padding: $section-spacing-mobile;
@@ -93,6 +100,7 @@ $triangle-mobile : 30px !default;
 			display: flex;
 			flex-direction: column-reverse;
 			padding: 30px;
+			width: 90%;
 			.gallery, .info {
 				width: 100%;
 				margin: 0;
@@ -108,11 +116,17 @@ $triangle-mobile : 30px !default;
 	h1 {
 		font-size: 1.875rem;
 	}
-	.header {
+	header {
+		justify-content: center;
 		padding: 20px;
-		font-size: 1.375rem;
+		a {
+			display: none;
+		}
+		nav {
+			width: 100%;
+		}
 		ul {
-			grid-column-gap: 10px;
+			justify-content: space-between;
 		}
 	}
 	.hero {
@@ -142,14 +156,18 @@ $triangle-mobile : 30px !default;
 		.event {
 			padding: 20px;
 			.gallery {
-				max-height: 150px;
+				max-height: 200px;
+			}
+			.modal .arrow {
+				--space: 15px;
+				height: 35px
 			}
 		}
 		&::after {
 			border-width: 0 $triangle-mobile $triangle-mobile $triangle-mobile;
 		}
 	}
-	.footer {
+	footer {
 		.socials {
 			.img {
 				width: 30px;
@@ -159,27 +177,10 @@ $triangle-mobile : 30px !default;
 }
 
 @media screen and (max-width: $mobile-m) {
-	.header {
-		padding: 20px 10px;
-		font-size: 1.25rem;
-		ul {
-			grid-column-gap: 5px;
-		}
-	}
-	.footer {
-		.socials {
-			grid-column-gap: 15px;
-			margin-bottom: 0;
-
-			img {
-				width: 30px;
-			}
-		}
-		p {
-			font-size: 0.875rem;
-			&:nth-of-type(2) {
-				font-size: 0.75rem;
-			}
+	footer .socials {
+		margin-bottom: 0;
+		img {
+			width: 30px;
 		}
 	}
 }

@@ -21,17 +21,21 @@ header {
 
 	ul {
 		display: flex;
-
-		li {
-			&:hover {
-				&:not(:last-child) {
+		
+		.sections {
+			display: flex;
+			margin-right: 20px;
+			
+			li {
+				&:hover {
 					color: $orange;
+					cursor: pointer;
 				}
-				cursor: pointer;
-			}
-			&:not(:last-child) {
-				margin-right: 20px;
+				&:not(:last-child) {
+					margin-right: 20px;
+				}
 			}
 		}
+
 	}
 }
