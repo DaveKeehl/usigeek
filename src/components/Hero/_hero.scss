@@ -57,8 +57,14 @@
 			}
 		}
 
-		img:hover {
-			cursor: pointer;
+		.arrow {
+			display: flex;
+			overflow: hidden;
+			img {
+				&:hover {
+					cursor: pointer;
+				}
+			}
 		}
 	}
 

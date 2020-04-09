@@ -9,10 +9,12 @@ function Event(props) {
 	
 	const openModal = () => {
 		setIsModalOpen(true)
+		document.querySelector('html').style.overflow = "hidden"
 	}
 	
 	const closeModal = () => {
 		setIsModalOpen(false)
+		document.querySelector('html').style.overflow = "initial"
 	}
 	
 	const path = `/images/events/${props.year}/`
