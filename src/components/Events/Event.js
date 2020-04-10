@@ -19,18 +19,16 @@ function Event(props) {
 	
 	const path = `/images/events/${props.year}/`
 
-	// const highlightPhotoStyle = {
-	// 	backgroundImage: `url("${path}${props.photos[0]}")`, 
-	// 	backgroundSize: "cover", 
-	// 	backgroundPosition: "center top"
-	// }
-
 	return (
 		<div className="event">
-			<div className="gallery" onClick={openModal}>
+			<div 
+				className="gallery" 
+				onClick={props.photos.length > 0 ? openModal : null} 
+				style={props.photos.length === 0 ? {cursor: "default"} : null}
+			>
 				<img src={`${path}${props.photos[0]}`} alt={props.title}/>
 				<div className="gallery-counter">
-					{props.photos.length} {props.language === "italian" ? "FOTO" : (props.photos.length > 1 ? "PHOTOS" : "PHOTO")}
+					{props.photos.length} {props.language === "italian" ? "FOTO" : (props.photos.length !== 1 ? "PHOTOS" : "PHOTO")}
 				</div>
 			</div>
 			<div className="info">
