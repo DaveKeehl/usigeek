@@ -22,6 +22,10 @@ header {
 	ul {
 		display: flex;
 		
+		li:hover {
+			cursor: pointer;
+		}
+
 		.sections {
 			display: flex;
 			margin-right: 20px;
@@ -29,7 +33,6 @@ header {
 			li {
 				&:hover {
 					color: $orange;
-					cursor: pointer;
 				}
 				&:not(:last-child) {
 					margin-right: 20px;
