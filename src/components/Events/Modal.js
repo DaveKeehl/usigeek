@@ -27,18 +27,22 @@ function Modal(props) {
 				alt="Close modal window"
 				onClick={() => props.closeModal()}
 			/>
-			<img 
-				className="arrow left"
-				src={arrow}
-				alt="Previous"
-				onClick={back}
-			/>
-			<img 
-				className="arrow right"
-				src={arrow}
-				alt="Next"
-				onClick={next}
-			/>
+			<div style={props.photos.length <= 1 ? {display: "none"} : null}>
+				<img 
+					className="arrow left"
+					src={arrow}
+					alt="Previous"
+					onClick={back}
+					style={counter === 0 ? {display: "none"} : null}
+				/>
+				<img 
+					className="arrow right"
+					src={arrow}
+					alt="Next"
+					onClick={next}
+					style={counter === props.photos.length-1 ? {display: "none"} : null}
+				/>
+			</div>
 		</div>
 	)
 }
