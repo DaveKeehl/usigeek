@@ -13,28 +13,20 @@ function Header(props) {
 			<a href="/">USI<span className="geek">GEEK</span></a>
 			<nav>
 				<ul>
-					<div className="sections">
-						<li id="about" onClick={handleClick}>
-							{language === "italian" ? "CHI SIAMO" : "ABOUT"}
-						</li>
-						<li id="events" onClick={handleClick}>
-							{language === "italian" ? "EVENTI" : "EVENTS"}
-						</li>
-					</div>
+					<li id="about" onClick={handleClick}>
+						{language === "italian" ? "CHI SIAMO" : "ABOUT"}
+					</li>
+					<li id="events" onClick={handleClick}>
+						{language === "italian" ? "EVENTI" : "EVENTS"}
+					</li>
 					<li onClick={toggleLanguage}>
-						{
-							language === "english" ? 
-							<span className="active">EN</span> 
-							: 
-							<span>EN</span>
-						}
+						<span className={language === "english" ? "active" : undefined}>
+							EN
+						</span> 
 						/
-						{
-							language === "italian" ? 
-							<span className="active">IT</span> 
-							: 
-							<span>IT</span>
-						}
+						<span className={language === "italian" ? "active" : undefined}>
+							IT
+						</span> 
 					</li>
 				</ul>
 			</nav>
