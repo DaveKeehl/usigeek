@@ -35,7 +35,7 @@
 					"place" : "USI, Room A11",
 					"description" : "We will show the short fan made movie \"Voldemort: Origins of the Heir\" (original English version with Italian subtitles) and follow with a discussion. We will have as guest professor Eleonora Benecchi. There will be beverages and snacks."
 				},
-				"photos" : ["harry potter poster.png"]
+				"photos" : ["harry potter poster.jpg"]
 			},
 			{
 				"italian" : {
@@ -60,7 +60,7 @@
 					"place" : "USI, Room SI-008",
 					"description" : "We will start the evening with Star Wars themed quizzes and an aperò. We will follow with the showing of the movie \"Rogue One: A Star Wars Story\" (original English version with Italian subtitles)."
 				},
-				"photos" : ["star wars poster.png"]
+				"photos" : ["star wars poster.jpg"]
 			},
 			{
 				"italian" : {
@@ -85,7 +85,7 @@
 					"place" : "To be defined",
 					"description" : "Board Games Night is a recurrent event that we organise for people who enjoy playing board games."
 				},
-				"photos" : ["BGN.png", "BGN-foto1.jpg", "BGN-foto2.jpg", "BGN-foto3.jpg", "BGN-foto4.jpg", "BGN-foto5.jpg", "BGN-foto6.jpg", "BGN-foto7.jpg"]
+				"photos" : ["BGN.jpg", "BGN-foto1.jpg", "BGN-foto2.jpg", "BGN-foto3.jpg", "BGN-foto4.jpg", "BGN-foto5.jpg", "BGN-foto6.jpg", "BGN-foto7.jpg"]
 			}
 		]
 	}
